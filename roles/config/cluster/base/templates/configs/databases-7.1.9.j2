@@ -15,6 +15,14 @@ RANGER:
     ranger_database_name: {{ databases.RANGER.name }}
     ranger_database_user: {{ databases.RANGER.user }}
     ranger_database_password: {{ databases.RANGER.password }}
+RANGER_KMS:
+  SERVICEWIDE:
+    ranger_kms_database_host: {{ databases.RANGER_KMS.host }}
+    ranger_kms_database_port: {{ databases.RANGER_KMS.port }}
+    ranger_kms_database_type: {{ databases.RANGER_KMS.type | cloudera.cluster.format_database_type }}
+    ranger_kms_database_name: {{ databases.RANGER_KMS.name }}
+    ranger_kms_database_user: {{ databases.RANGER_KMS.user }}
+    ranger_kms_database_password: {{ databases.RANGER_KMS.password }}
 RANGER_RMS:
   SERVICEWIDE:
     ranger_rms_database_host: {{ databases.RANGER.host }}

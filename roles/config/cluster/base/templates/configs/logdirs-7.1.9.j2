@@ -156,6 +156,11 @@ RANGER:
   RANGER_USERSYNC:
     log_dir: "{{ log_base }}/ranger/usersync"
     ranger_usersync_metrics_filepath: "{{ log_base }}/ranger/metrics-usersync"
+RANGER_KMS:
+  RANGER_KMS_SERVER:
+    log_dir: "{{ log_base }}/ranger/kms"
+    ranger_audit_hdfs_spool_dir: "{{ log_base }}/kms/audit/hdfs/spool"
+    ranger_audit_solr_spool_dir: "{{ log_base }}/kms/audit/solr/spool"
 RANGER_RAZ:
   RANGER_RAZ_SERVER:
     log_dir: "{{ log_base }}/ranger/raz"

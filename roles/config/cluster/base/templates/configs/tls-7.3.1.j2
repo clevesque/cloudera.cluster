@@ -24,3 +24,9 @@ SQL_STREAM_BUILDER:
     ssl_server_certificate_location: {{ tls_cert_path_generic }}
     ssl_server_privatekey_location: {{ tls_key_path_generic }}
     ssl_server_privatekey_password: {{ tls_key_password }}
+  RANGER_KMS:
+    ssl_client_truststore_location: {{ tls_truststore_path }}
+    ssl_client_truststore_password: {{ tls_truststore_password }}
+    ssl_enabled: true
+    ssl_server_keystore_location: {{ tls_keystore_path_generic }}
+    ssl_server_keystore_password: {{ tls_keystore_password }}
